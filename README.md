@@ -95,6 +95,7 @@ Lisensi diverifikasi **offline** dengan **Ed25519** — tidak ada data lisensi y
 
 - **Trial 14 hari** aktif otomatis saat pertama dipakai; fitur Pro terbuka selama trial.
 - Aktivasi: **Lisensi → tempel kode `CH1.xxxxx.yyyyy` → Aktifkan**. Kode terikat ke edition, masa berlaku, dan penerima.
+- Penerbitan kode oleh pemilik: `node tools/sign-license.mjs --key /secure/license-private.pem --edition pro --to "Nama" --exp 2027-12-31`. **Private key tidak pernah masuk repo** (lihat `.gitignore`).
 - Data user **tidak pernah dikunci** saat trial habis atau lisensi tidak valid.
 - Harga, kode, invoice, dan white-label diatur oleh pembuat (`aisac-id`). Hubungi lewat [Issues](https://github.com/aisac-id/creator-extension/issues).
 - **Refund**: karena lisensi bersifat offline, refund diberikan bila kode **belum diaktifkan** dan diminta dalam 7 hari setelah pembelian. Kode yang sudah dipakai tidak dapat ditarik kembali; hubungi dukungan untuk kasus khusus.
