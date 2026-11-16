@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Harness</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/widgets.css">
+</head>
+<body>
+  <div class="hx-app" id="app" data-mode="sidebar">
+    <header class="hx-header">
+      <div class="hx-brand">
+        <div class="hx-logo" id="logo" aria-hidden="true">CH</div>
+        <div class="hx-brandtext">
+          <span class="hx-product" id="productName">Creator Harness</span>
+          <button class="hx-badge" id="licenseBadge" type="button" title="Lisensi">FREE</button>
+        </div>
+      </div>
+      <div class="hx-headtools">
+        <button class="hx-icon-btn" id="btnHelp" type="button" title="Bantuan & panduan" aria-label="Bantuan"></button>
+        <button class="hx-icon-btn" id="btnMode" type="button" title="Ubah mode tampilan" aria-label="Ubah mode"></button>
+        <button class="hx-icon-btn" id="btnClose" type="button" title="Tutup sidebar (Esc)" aria-label="Tutup"></button>
+      </div>
+    </header>
+
+    <div class="hx-main">
+      <nav class="hx-rail" id="rail" aria-label="Panel Creator Harness"></nav>
+      <main class="hx-content" id="content" aria-live="polite"></main>
+    </div>
+
+    <div id="onboardingHost" hidden></div>
+  </div>
+  <div class="hx-toasts" id="toastHost" aria-live="polite"></div>
+  <div id="modalHost"></div>
+  <script type="module" src="SidebarApp.js"></script>
+</body>
+</html>

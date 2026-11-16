@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Halaman demo lokal untuk mencoba panen konten dan otomasi Creator Harness tanpa internet.">
+  <meta name="author" content="Creator Harness">
+  <link rel="icon" href="data:,">
+  <title>Demo — Studio Konten Mingguan</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: #f4f7fb; color: #101828; }
+    header { display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #0e1b33; color: #eaf6ff; }
+    header strong { font-size: 13px; letter-spacing: 0.02em; }
+    header span { margin-left: auto; font-size: 11px; opacity: 0.75; }
+    main { max-width: 860px; margin: 0 auto; padding: 18px 18px 40px; }
+    article h1 { font-size: 24px; line-height: 1.25; margin: 6px 0 10px; }
+    article p { margin: 0 0 10px; font-size: 14px; line-height: 1.65; color: #334155; }
+    .searchbar { display: flex; gap: 8px; margin: 14px 0 8px; }
+    .searchbar input { flex: 1; padding: 8px 10px; border: 1px solid #cdd8e8; border-radius: 8px; font-size: 13px; }
+    .searchbar button { padding: 8px 14px; border: 0; border-radius: 8px; background: #0e7490; color: #fff; font-weight: 700; font-size: 13px; cursor: pointer; }
+    .hits { display: grid; gap: 6px; padding: 0; margin: 0 0 14px; list-style: none; }
+    .demo-hit { padding: 8px 10px; background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; }
+    .demo-hit strong { color: #0e7490; }
+    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 14px 0; }
+    figure { margin: 0; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { padding: 6px 9px; font-size: 11px; color: #64748b; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 12.5px; background: #fff; }
+    th, td { padding: 7px 9px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+    th { background: #eef4fb; color: #334155; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+    footer { max-width: 860px; margin: 0 auto; padding: 0 18px 24px; font-size: 11px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Demo Studio Konten</strong>
+    <span>halaman lokal · bukan internet</span>
+  </header>
+  <main>
+    <article>
+      <p><strong>Panduan mingguan</strong> · 6 menit baca</p>
+      <h1>Tujuh ide konten yang bisa dipanen dari satu halaman studio</h1>
+      <p>Halaman demo ini disimpan di dalam extension, jadi kamu bisa mencoba panen gambar, teks, tabel, dan otomasi tanpa membuka situs lain atau mengirim data ke mana pun.</p>
+      <p>Alur kerjanya sederhana: rekam aset dari halaman, simpan ke perpustakaan Data, lalu olah menjadi ide, naskah, jadwal tayang, dan laporan performa di panel lain.</p>
+
+      <div class="searchbar">
+        <input id="demo-search" type="search" placeholder="Cari ide konten..." aria-label="Cari ide konten">
+        <button id="demo-search-btn" type="button">Cari</button>
+      </div>
+      <ul class="hits" id="demo-hits">
+        <li class="demo-hit"><strong>Ide konten 1:</strong> rutinitas pagi kreator dalam 45 detik</li>
+        <li class="demo-hit"><strong>Ide konten 2:</strong> di balik layar setup kamera dan lampu</li>
+        <li class="demo-hit"><strong>Ide konten 3:</strong> tiga konten pendek dari satu sesi rekaman</li>
+      </ul>
+
+      <div class="gallery">
+        <figure>
+          <img src="img/cover.jpg" alt="Ilustrasi studio konten mingguan" width="560" height="368">
+          <figcaption>Papan rencana konten mingguan.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/setup.jpg" alt="Ilustrasi meja kreator dengan kamera" width="560" height="368">
+          <figcaption>Setup meja dan pencahayaan sederhana.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/visual.jpg" alt="Ilustrasi galeri aset visual" width="560" height="368">
+          <figcaption>Galeri aset visual untuk unggahan.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/analitik.jpg" alt="Ilustrasi grafik analitik konten" width="560" height="368">
+          <figcaption>Ringkasan performa tayangan.</figcaption>
+        </figure>
+      </div>
+
+      <p>Tabel di bawah merangkum contoh performa tiga konten terakhir. Angka ini fiktif dan hanya dipakai untuk latihan membaca data di panel Analitik.</p>
+      <table>
+        <caption>Performa konten contoh</caption>
+        <thead>
+          <tr><th>Konten</th><th>Platform</th><th>Tayangan</th><th>Interaksi</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Rutinitas pagi</td><td>Instagram</td><td>18.400</td><td>1.240</td></tr>
+          <tr><td>Di balik layar</td><td>TikTok</td><td>42.900</td><td>3.870</td></tr>
+          <tr><td>Tiga klip satu sesi</td><td>YouTube</td><td>12.150</td><td>960</td></tr>
+        </tbody>
+      </table>
+      <p>Setelah panen demo berhasil, buka panel Data untuk melihat galeri gambar, potongan teks, dan tabel yang tersimpan. Dari sana kamu bisa mengekspor berkas atau mengirim ringkasan ke platform.</p>
+    </article>
+  </main>
+  <footer>Halaman contoh bawaan Creator Harness. Tidak ada pelacakan dan tidak ada permintaan jaringan.</footer>
+  <script src="demo.js" defer></script>
+</body>
+</html>

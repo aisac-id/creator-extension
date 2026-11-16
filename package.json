@@ -1,0 +1,11 @@
+{
+  "name": "creator-harness-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tooling repo (bukan dependency runtime). Extension berjalan tanpa build step.",
+  "scripts": {
+    "check": "node tools/check.mjs",
+    "pack": "node tools/pack.mjs"
+  }
+}
