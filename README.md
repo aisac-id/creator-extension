@@ -4,6 +4,24 @@
 
 Dibangun mengikuti **Harness Extension Standard v1.5** (`aisac-id/harness-extension`): Manifest V3, sidebar 25% di kanan, Shadow DOM, tiga mode tampilan, panel lazy, lapisan RPA, scraper pipeline, multi-provider LLM, SecretVault, lisensi offline Ed25519, dan onboarding 12 langkah dengan demo nyata.
 
+## Brand & visual
+
+<p align="center">
+  <img src="promo/logo.png" width="160" alt="Logo Creator Harness: bola berpendar bergradasi sian, indigo, dan pink dengan tombol play serta percikan amber di atas latar navy gelap"/>
+</p>
+
+<p align="center">
+  <img src="promo/banner.png" width="100%" alt="Banner Creator Harness: studio kreator dengan halo ring light dan kartu ide, naskah, serta kalender"/>
+</p>
+
+<p align="center">
+  <img src="promo/software-box.png" width="420" alt="Kotak software Creator Harness miring dengan halo ring light dan tulisan CREATE • PLAN • PUBLISH"/>
+</p>
+
+<p align="center">
+  <img src="promo/poster.png" width="420" alt="Poster Creator Harness: ide &amp; naskah, kalender &amp; produksi, analitik &amp; RPA"/>
+</p>
+
 ## Fitur
 
 | Panel | Yang bisa dilakukan |
